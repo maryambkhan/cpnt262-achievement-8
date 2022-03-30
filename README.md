@@ -21,7 +21,7 @@
 - I had little setback with fetching image then i found this  `<img :src=blok.image.filename />`
 - It was really hard experience for me i  think practiced on almost all of my storries from 
  story blok and this is the only one i got rnender properly 
- ![Card](images/apifetch.PNG)
+ ![Card](assets/images/apifetch.PNG)
 - I am working on this page layout i finally render the body on page but i am stuck with 
   footer i dont know how to do it .AAAAHHHHH it is annoying
 - Understanding the hierachy of story is very important.
