@@ -1,11 +1,12 @@
 <template>
 <header>
-  <h1 class="flex justify-center font-bold text-2xl text-orange-700">
+  <h1 class="flex justify-center font-bold text-2xl text-orange-900 bg-red-100 mx-auto px-4">
     {{ state.story.name }}
   </h1>
 </header>
  <section>
-  <Cards :blok="components" />
+  <Movies :blok="components[0]" />
+ <Movies :blok="components[1]" />
   </section>
   <!--
   <div>
@@ -13,25 +14,26 @@
       {{ pageContent }}
     </pre>
   </div>
-  -->
+ -->
+ <TheFooter />
 </template>
 
 <script setup>
-// access the storyblok build in function
+
 const storyapi = useStoryApi();
-// Fetch the data
-const { data: cards } = await storyapi.get("cdn/stories/first-project/card-layout", {
+
+const { data: movie } = await storyapi.get("cdn/stories/movies-list/movies", {
   version: "draft",
 });
 
-// Make the data reactive
-const state = reactive({ story: cards.story });
 
-// Making it faster to get info from the content
+const state = reactive({ story: movie.story });
+
+
 const pageContent = state.story.content;
 
-// Make it easy to assign content from components
-const components = state.story.content;
+
+const components = state.story.content.movie;
 
 const pageInfo = {
   title: pageContent,
