@@ -27,3 +27,10 @@
 - Understanding the hierachy of story is very important.
 - Finaly i think its making sense to me ,I found my structure in storyblok was too nested that was causing 
   problem for me to fetch.
+- I did more practice on fetching public api and finaly i got it 
+- I was able to fetch gibli studio api WIN Today!!!
+
+### Attributions
+ 
+- Ghibli studio api
+- Google Photos

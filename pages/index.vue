@@ -4,10 +4,12 @@
     {{ state.story.name }}
   </h1>
 </header>
+<!--StoryBlok -->
  <section>
+   <h1 class="flex justify-center font-bold text-orange-900 text-2xl mt-4">StoryBlok Api</h1>
   <Movies :blok="components[0]" />
  <Movies :blok="components[1]" />
-  </section>
+  
   <!--
   <div>
     <pre>
@@ -15,6 +17,24 @@
     </pre>
   </div>
  -->
+ </section>
+
+ <!--Ghibli Api-->
+     <section>
+       <h1 class="flex justify-center font-bold text-orange-900 text-2xl mt-4">Ghibli Studio Api</h1>
+       <div class="flex justify-center  mt-4">
+      <ul class="marker:text-red-900 list-disc ">
+        <li v-for="films in films" :key="films.id">
+          {{ films.title }} &emsp; {{films.original_title}}
+        </li>
+      </ul>
+       </div>
+    <!--
+      <pre>
+    <h1>{{films}}</h1>
+    </pre>
+   -->
+    </section>
  <TheFooter />
 </template>
 
@@ -39,6 +59,11 @@ const pageInfo = {
   title: pageContent,
   description: state.story.content.description,
 };
+
+//Ghibli Api
+const {data: films} = await useAsyncData("films", ()=> 
+$fetch("https://ghibliapi.herokuapp.com/films/"),
+);
 console.log(components);
 </script>
 
