@@ -5,7 +5,7 @@
 ## Async Fetch Nuxt
 
 - [GH repo](https://github.com/maryambkhan/cpnt262-achievement-8)
-- [Netlify Site]()
+- [Netlify Site](https://famous-griffin-9f41d5.netlify.app/)
 
 ### Code Journal
 
