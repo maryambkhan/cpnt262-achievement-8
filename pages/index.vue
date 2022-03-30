@@ -23,6 +23,7 @@ const storyapi = useStoryApi();
 const { data: cards } = await storyapi.get("cdn/stories/first-project/card-layout", {
   version: "draft",
 });
+
 // Make the data reactive
 const state = reactive({ story: cards.story });
 
@@ -32,12 +33,10 @@ const pageContent = state.story.content;
 // Make it easy to assign content from components
 const components = state.story.content;
 
-
 const pageInfo = {
   title: pageContent,
   description: state.story.content.description,
 };
 console.log(components);
 </script>
-
 

@@ -16,7 +16,7 @@
     </h1>
     <p class="flex justify-center font-semibold">{{blok.sub_title}}</p>
     <p class="flex justify-center font-bold">{{blok.price}}</p>
-    <img :src=blok.rating/>
+    <img :src=blok.rating />
   </div>
 </template>
 

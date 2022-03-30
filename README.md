@@ -4,7 +4,7 @@
 
 ## Async Fetch Nuxt
 
-- [GH repo]()
+- [GH repo](https://github.com/maryambkhan/cpnt262-achievement-8)
 - [Netlify Site]()
 
 ### Code Journal
@@ -17,6 +17,12 @@
   [storyblok](https://www.storyblok.com/mp/storyblok-meets-vue3-nuxt3).
 - Plan:
   - I am going  to fetch one of the api from storyblok that i already had worked on.
-
+- So i took a story from story blok and fetched the data and created a card on html page.
+- I had little setback with fetching image then i found this  `<img :src=blok.image.filename />`
+- It was really hard experience for me i  think practiced on almost all of my storries from 
+ story blok and this is the only one i got rnender properly 
+- I am working on this page layout i finally render the body on page but i am stuck with 
+  footer i dont know how to do it .AAAAHHHHH it is annoying
+- Understanding the hierachy of story is very important.
 
 
